@@ -1,0 +1,58 @@
+.\" -*- NROFF -*-
+.\"
+.\" mairix.1
+.\"
+.\" Author: Kevin Rosenberg <kmr@debian.org>
+.\"
+.\" $Id: mairix.1,v 1.3 2003/07/07 16:22:32 kevin Exp $
+.\"
+.TH "pngcheck" "1" "" "Kevin M. Rosenberg" "Utils"
+.SH "NAME"
+pngcheck \- Test PNG image files for corruption, and print size/type/compression info.
+.SH "SYNOPSIS"
+ pngcheck [-vqt7f] file.png [file.png [...]]
+.PP
+ pngcheck [-vqt7f] file.mng [file.mng [...]]
+.PP
+  ... | pngcheck [-sx][vqt7f]
+.PP
+  pngcheck -{sx}[vqt7f] file-containing-PNGs...
+
+.SH "DESCRIPTION "
+
+\fIpngcheck\fP verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs or checksums) and optionally dumps almost all of the chunk-level information in the image in human-readable form. For example, it can be used to print the basic stats about an image (dimensions, bit depth, etc.); to list the color and transparency info in its palette; or to extract the embedded text annotations. All PNG and JNG chunks are supported, plus almost all MNG chunks (everything but PAST, DISC, tERm, DROP, DBYK, and ORDR). This is a command-line program with batch capabilities (e.g., ``pngcheck *.png'').
+
+.SH "OPTIONS"
+\fIpngcheck\fP accepts the following options:
+.TP 16
+.B \-v
+   test verbosely (print most chunk data)
+.TP 16
+.B \-q
+   test quietly (only output errors)
+.TP 16
+.B \-
+   print contents of tEXt chunks (can be used with -q)
+.TP 16
+.B \-7
+   print contents of tEXt chunks, escape chars >=128 (for 7-bit terminals)
+.TP 16
+.B \-p
+   print contents of PLTE, tRNS, hIST, sPLT and PPLT (can be used with -q)
+.TP 16
+.B \-f
+   force continuation even after major errors
+.TP 16
+.B \-s
+  search for PNGs within another file
+.TP 16
+.B \-x
+   search for PNGs and extract them when found
+
+.SH "AUTHOR"
+This man page was written by Kevin M. Rosenberg <kmr@debian.org> since
+the upstream package did not include a man page.
+
+.SH "NOTES"
+MNG support is incomplete.  Based on MNG Draft 64.
+
