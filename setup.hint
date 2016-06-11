@@ -9,4 +9,4 @@ and JNG chunks are supported, plus almost all MNG chunks (everything
 but PAST, DISC, tERm, DROP, DBYK, and ORDR). This is a command-line
 program with batch capabilities."
 category: Graphics
-requires: cygwin zlib
+requires: zlib
