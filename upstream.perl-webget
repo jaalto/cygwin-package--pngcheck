@@ -1,5 +1,4 @@
-tag1: pngcheck
-  http://prdownloads.sourceforge.net/png-mng/pngcheck-2.3.0.tar.gz mirror:mesh page: new: x:
+#  http://prdownloads.sourceforge.net/png-mng/pngcheck-2.3.0.tar.gz mirror:mesh page: new: x:
 
-tag1: pngcheck-debian
+tag1: pngcheck
   http://packages.debian.org/unstable/pngcheck pregexp:orig.tar.gz file:pngcheck_2.0.0.orig.tar.gz  new: x:
