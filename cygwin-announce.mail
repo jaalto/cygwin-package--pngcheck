@@ -1,8 +1,7 @@
--- Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
+-- Copyright (C) 2007-2021 Jari Aalto; Licenced under GPL v2 or later
 
 To: cygwin-announce@cygwin.com
-Subject: Updated: package N.N
-Subject: New package: pngcheck 2.3.0-1 -- PNG file format checker
+Subject: Updated: pngcheck 3.0.2-1 -- PNG file format checker
 
 PACKAGE DESCRIPTION
 ===================

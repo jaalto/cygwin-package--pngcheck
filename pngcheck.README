@@ -59,29 +59,27 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack pngcheck-2.3.0-1-src.tar.bz2
+  unpack pngcheck-3.0.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./pngcheck*.sh all
 
 This will create:
-  pngcheck-2.3.0-1.tar.bz2
-  pngcheck-2.3.0-1-src.tar.bz2
+  pngcheck-3.0.2-1.tar.xz
+  pngcheck-3.0.2-1-src.tar.xz
 
 -------------------------------------------
 
 Files included in the binary distribution:
-
-usr/bin/pngcheck.exe
-usr/share/doc/Cygwin/pngcheck-2.3.0.README
-usr/share/doc/pngcheck-2.3.0/ChangeLog
-usr/share/doc/pngcheck-2.3.0/README
-usr/share/man/man1/pngcheck.1.gz
+  See Cygwin package archive
 
 ------------------
 
 Port Notes:
+
+----- version 3.0.2-1 -----
+- New upstream release 2021-04-14 Jari Aalto
 
 ----- version 2.3.0-1 -----
 - Initial release 2007-12-02 Jari Aalto
@@ -89,4 +87,4 @@ Port Notes:
 - No manual page. Copied one from Debian.
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2021 Jari Aalto; Licenced under GPL v2 or later
